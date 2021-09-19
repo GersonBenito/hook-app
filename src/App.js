@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { FormCustomHooks } from "./components/useEffect/FormCustomHooks";
+import { SimpleForm } from "./components/useEffect/SimpleForm";
+import { MultipleCustomHooks } from "./components/useFetch/MultipleCustomHooks";
+import { Memorizar } from "./components/memo/Memorizar";
+import { EjemploReal } from "./components/useRef/EjemploReal";
+import { FocusScreen } from "./components/useRef/FocusScreen";
+import { Contador } from "./components/useState/Contador";
+import { MemoHook } from "./components/useMemo/MemoHook";
+import { CallbackHook } from "./components/useCallback/CallbackHook";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Contador />
+      <SimpleForm />
+      <FormCustomHooks />
+      <MultipleCustomHooks />
+      <FocusScreen />
+      <EjemploReal />
+      <Memorizar />
+      <MemoHook />
+      <CallbackHook />
     </div>
   );
 }
