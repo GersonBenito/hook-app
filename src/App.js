@@ -7,6 +7,7 @@ import { FocusScreen } from "./components/useRef/FocusScreen";
 import { Contador } from "./components/useState/Contador";
 import { MemoHook } from "./components/useMemo/MemoHook";
 import { CallbackHook } from "./components/useCallback/CallbackHook";
+import { Padre } from "./components/tarea/Padre";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Memorizar />
       <MemoHook />
       <CallbackHook />
+      <Padre />
     </div>
   );
 }
